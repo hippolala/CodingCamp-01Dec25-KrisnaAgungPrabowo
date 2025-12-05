@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Profile - RevoU Mini Site</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+<!-- LOADING SCREEN -->
+<div id="loadingScreen" class="loading-overlay">
+    <div class="spinner"></div>
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar glass">
+    <div class="container nav-inner">
+        <div class="brand">
+            <a href="index.html" class="brand-link">
+                <img src="https://storage.googleapis.com/danacita-website-v3-prd/website_v3/images/Revou-alasan.original.png" alt="RevoU Logo">
+                <span>RevoU Indonesia</span>
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="profile.html">Our Profile</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="index.html#message">Message Us</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- BANNER -->
+<header class="profile-banner">
+    <div class="banner-content">
+        <p class="eyebrow">About RevoU</p>
+        <h1>Online School for Digital Careers</h1>
+        <p>Belajar skill digital dari praktisi industri, 100% online dan live.</p>
+    </div>
+</header>
+
+<!-- PROFILE CONTENT -->
+<section class="profile-section">
+    <div class="card-box glass fade-up">
+        <h2>About RevoU</h2>
+        <p>
+            RevoU adalah online learning platform yang fokus membantu talenta Indonesia
+            berkarier di ranah digital seperti Digital Marketing, Data Analytics, dan Software Engineering.
+            Programnya menggabungkan live class, studi kasus, project portfolio, dan career support yang intensif.
+        </p>
+    </div>
+
+    <div class="card-box glass fade-up">
+        <h2>Why RevoU</h2>
+        <ul class="mission-list">
+            <li>Kurikulum disusun dan diajarkan oleh praktisi aktif di perusahaan teknologi.</li>
+            <li>Belajar secara live, interaktif, dan full online sehingga bisa diakses dari seluruh Indonesia.</li>
+            <li>Setiap peserta mendapatkan career support: review CV, mock interview, dan career coaching.</li>
+            <li>Akses ke komunitas alumni & learners dengan ribuan anggota untuk networking jangka panjang.</li>
+        </ul>
+    </div>
+
+    <div class="card-box glass fade-up">
+        <h2>Learning Experience</h2>
+        <p>
+            Di RevoU, kamu tidak hanya belajar teori. Peserta akan mengerjakan project nyata
+            seperti membuat kampanye digital, membangun dashboard data, atau membangun web app sederhana,
+            kemudian mempresentasikan hasilnya layaknya profesional di perusahaan.
+        </p>
+    </div>
+</section>
+
+<!-- CORE VALUES -->
+<section class="profile-section fade-up">
+    <div class="section-header">
+        <h2>RevoU Core Values</h2>
+        <p>Nilai yang kami pegang selama membimbing ribuan siswa di Indonesia menuju karier digital.</p>
+    </div>
+
+    <div class="values-grid">
+        <div class="value-card glass">
+            <h3>🚀 Growth Mindset</h3>
+            <p>RevoU percaya bahwa setiap orang bisa berkembang melalui latihan, feedback, dan konsistensi.</p>
+        </div>
+
+        <div class="value-card glass">
+            <h3>🤝 Collaboration</h3>
+            <p>Kamu belajar bersama komunitas besar yang saling membantu dan bertumbuh bareng.</p>
+        </div>
+
+        <div class="value-card glass">
+            <h3>📊 Data-Driven</h3>
+            <p>Semua keputusan—baik akademik maupun karier—selalu berdasarkan data dan real case.</p>
+        </div>
+    </div>
+</section>
+
+<!-- INSTRUCTORS -->
+<section class="profile-section fade-up">
+    <div class="section-header">
+        <h2>Meet Your Instructors</h2>
+        <p>Dibimbing langsung oleh praktisi aktif dari perusahaan teknologi ternama.</p>
+    </div>
+
+    <div class="instructor-grid">
+        <div class="instructor-card glass">
+            <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e" alt="">
+            <h3>Bibi</h3>
+            <p>Senior Digital Marketer — Tokopedia</p>
+        </div>
+
+        <div class="instructor-card glass">
+            <img src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39" alt="">
+            <h3>Baba</h3>
+            <p>Data Analyst — Gojek</p>
+        </div>
+
+        <div class="instructor-card glass">
+            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2" alt="">
+            <h3>Bubu</h3>
+            <p>Software Engineer — Traveloka</p>
+        </div>
+    </div>
+</section>
+
+<!-- CAREER SUPPORT -->
+<section class="profile-section fade-up">
+    <div class="career-card glass">
+        <h2>Career Support That Guides You</h2>
+        <p>
+            RevoU bukan hanya tempat belajar — tapi partner kariermu. 
+            Kamu akan dibimbing membuat CV, mengerjakan portfolio profesional, mengikuti mock interview, 
+            hingga dipersiapkan langsung untuk dunia kerja di industri digital.
+        </p>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="container footer-inner">
+        <span>© Created by Krisna · RevoU Mini Project</span>
+        <span class="footer-note">Profile page inspired by RevoU Indonesia learning experience.</span>
+    </div>
+</footer>
+
+<script>
+    function hideLoadingScreen() {
+        document.getElementById("loadingScreen").style.display = "none";
+    }
+
+    window.addEventListener("load", function () {
+        setTimeout(() => {
+            hideLoadingScreen();
+        }, 700);
+    });
+</script>
+
+<script src="./js/script.js"></script>
+
+</body>
+</html>

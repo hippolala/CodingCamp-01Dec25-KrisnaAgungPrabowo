@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RevoU Mini Site</title>
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+    <!-- LOADING SCREEN -->
+    <div id="loadingScreen" class="loading-overlay">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- NAME POPUP -->
+    <div id="namePopup" class="popup-overlay">
+        <div class="popup-box glass">
+            <img class="popup-logo" src="https://storage.googleapis.com/danacita-website-v3-prd/website_v3/images/Revou-alasan.original.png" alt="RevoU Logo">
+            <h2>Welcome!</h2>
+            <p>Masukkan nama kamu dulu ya sebelum masuk ke halaman RevoU.</p>
+
+            <input type="text" id="popupNameInput" placeholder="Masukkan Nama..." required>
+            <button id="popupSubmit">Masuk</button>
+        </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar glass">
+        <div class="container nav-inner">
+            <div class="brand">
+                <a href="index.html" class="brand-link">
+                    <img src="https://storage.googleapis.com/danacita-website-v3-prd/website_v3/images/Revou-alasan.original.png" alt="RevoU Logo">
+                    <span>RevoU Indonesia</span>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="profile.html">Our Profile</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="#message">Message Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <!-- HERO / HOME -->
+        <section id="home" class="home">
+            <div class="container hero-grid">
+                <div class="hero-text fade-up">
+                    <p class="eyebrow">Online Learning · Indonesia</p>
+                    <h1 id="welcomeText">Hi, welcome to RevoU mini site</h1>
+                    <p class="hero-subtitle">
+                        RevoU adalah online school untuk karier digital: Digital Marketing, Data Analytics,
+                        dan Software Engineering. Semua kelas live, project-based, dan dibimbing praktisi industri.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="profile.html" class="btn btn-primary">Lihat Profil RevoU</a>
+                        <a href="#message" class="btn btn-ghost">Kirim Pesan</a>
+                    </div>
+
+                    <div class="stats-bar glass">
+                        <div class="stat-item">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Kelas Online</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <span class="stat-number">12.500+</span>
+                            <span class="stat-label">Community Members</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-banner glass fade-up">
+                    <img src="https://edufund.co.id/blog/wp-content/uploads/2024/01/Foto-dari-RevoU-1024x598.jpg"
+                         alt="RevoU Online Class">
+                </div>
+            </div>
+        </section>
+
+        <!-- HEADQUARTER SECTION -->
+        <section id="profile" class="section">
+            <div class="container">
+                <header class="section-header fade-up">
+                    <h2>Our Headquarter Cities</h2>
+                    <p>
+                        RevoU beroperasi secara remote, namun banyak kegiatan komunitas dan alumni aktif
+                        di beberapa kota besar di Indonesia.
+                    </p>
+                </header>
+
+                <div class="city-container fade-up">
+                    <div class="city-card glass">
+                        <div class="city-icon">
+                            <img src="https://ekaputrawisata.com/wp-content/uploads/2025/01/Monas-National-Monument-A-Complete-Guide-to-Indonesias-Iconic-Landmark-in-Jakarta-1.webp" alt="Jakarta">
+                        </div>
+                        <p class="city-name">Jakarta</p>
+                        <p class="city-desc">Komunitas terbesar, banyak meetup & sharing alumni.</p>
+                    </div>
+
+                    <div class="city-card glass">
+                        <div class="city-icon">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Gedung_Sate_Oktober_2024_-_Rahmatdenas.jpg/1200px-Gedung_Sate_Oktober_2024_-_Rahmatdenas.jpg" alt="Bandung">
+                        </div>
+                        <p class="city-name">Bandung</p>
+                        <p class="city-desc">Basis kuat untuk tech talents & startup scene.</p>
+                    </div>
+
+                    <div class="city-card glass">
+                        <div class="city-icon">
+                            <img src="https://i.pinimg.com/736x/32/cb/b6/32cbb6f9529f297f2a03f8d163d99375.jpg" alt="Surabaya">
+                        </div>
+                        <p class="city-name">Surabaya</p>
+                        <p class="city-desc">Hub penting untuk talenta digital di Jawa Timur.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MINI PORTFOLIO PREVIEW -->
+        <section id="portfolio" class="section section-alt">
+            <div class="container">
+                <header class="section-header fade-up">
+                    <h2>Featured Learning Tracks</h2>
+                    <p>
+                        Contoh jalur belajar populer di RevoU yang membantu ribuan siswa
+                        berkarier di industri digital.
+                    </p>
+                </header>
+
+                <div class="portfolio-grid fade-up">
+                    <a href="portfolio.html#dm" class="portfolio-card glass">
+                        <h3>Digital Marketing</h3>
+                        <p>
+                            Belajar social media ads, SEO, content, dan campaign strategy dengan studi kasus
+                            brand Indonesia.
+                        </p>
+                        <span class="tag">Project-based</span>
+                    </a>
+
+                    <a href="portfolio.html#da" class="portfolio-card glass">
+                        <h3>Data Analytics</h3>
+                        <p>
+                            Bangun dashboard, olah data real, dan presentasi insight layaknya data analyst profesional.
+                        </p>
+                        <span class="tag">SQL · Spreadsheet · Dashboard</span>
+                    </a>
+
+                    <a href="portfolio.html#se" class="portfolio-card glass">
+                        <h3>Software Engineering</h3>
+                        <p>
+                            Dari fundamental web sampai full-stack apps, lengkap dengan best-practice industri.
+                        </p>
+                        <span class="tag">Full Online</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- MESSAGE US SECTION -->
+        <section id="message" class="section">
+            <div class="container">
+                <header class="section-header fade-up">
+                    <h2>Message Us</h2>
+                    <p>Kirim pertanyaan, feedback, atau alasan kamu tertarik belajar di RevoU.</p>
+                </header>
+
+                <div class="msg-container fade-up">
+
+                    <!-- FORM -->
+                    <form id="messageForm" class="msg-form glass">
+                        <label>Nama</label>
+                        <input type="text" id="nameInput" placeholder="Masukkan Nama" required />
+
+                        <label>Tanggal Lahir</label>
+                        <input type="date" id="birthInput" required />
+
+                        <label>Jenis Kelamin</label>
+                        <div class="gender-group">
+                            <label class="gender-option">
+                                <input type="radio" name="gender" value="Laki-laki" />
+                                <span>Laki-Laki</span>
+                            </label>
+
+                            <label class="gender-option">
+                                <input type="radio" name="gender" value="Perempuan" />
+                                <span>Perempuan</span>
+                            </label>
+                        </div>
+
+                        <label>Pesan</label>
+                        <textarea id="messageInput" placeholder="Masukkan Pesan..." required></textarea>
+
+                        <button type="submit">Submit</button>
+                    </form>
+
+                    <!-- RESULT BOX -->
+                    <div class="msg-result glass">
+                        <h3>Last Submitted</h3>
+                        <p><span class="result-label">Current Time</span><span id="currentTime"></span></p>
+                        <p><span class="result-label">Nama</span><span id="resultName"></span></p>
+                        <p><span class="result-label">Tanggal Lahir</span><span id="resultBirth"></span></p>
+                        <p><span class="result-label">Jenis Kelamin</span><span id="resultGender"></span></p>
+                        <p class="result-message-row">
+                            <span class="result-label">Pesan</span>
+                            <span id="resultMsg"></span>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container footer-inner">
+            <span>© Created by Krisna · RevoU Mini Project</span>
+            <span class="footer-note">This site is inspired by RevoU Indonesia online learning programs.</span>
+        </div>
+    </footer>
+
+    <div id="notifBox" class="notif-box">Pesan berhasil dikirim!</div>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
